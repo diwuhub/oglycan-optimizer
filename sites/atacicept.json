@@ -1,0 +1,31 @@
+{
+  "glycoprotein": {
+    "name": "Atacicept",
+    "description": "TACI-IgG1 Fc fusion using atacicept numbering from the cited site-specific glycosylation study. Two O-glycosites were reported in the hinge region.",
+    "uniprot": "O14836 + IgG1 Fc",
+    "reference": "Stavenhagen et al. 2019"
+  },
+  "difficulty_heuristic": "0.40 baseline +0.10 if core_types include a sialylated glycoform +0.10 if the site is within 2 residues of another curated O-glycosite +0.10 if the site is within 2 residues of Pro +0.10 if the site is reported in only one cited study +0.10 if the cited literature explicitly describes low occupancy or site variability; clamp to [0.30, 0.95].",
+  "sites": [
+    {
+      "pos": 86,
+      "aa": "S",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.6,
+      "domain": "hinge",
+      "immunogenicity_flags": ["sialylation_PK"]
+    },
+    {
+      "pos": 91,
+      "aa": "T",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.7,
+      "domain": "hinge",
+      "immunogenicity_flags": ["sialylation_PK"]
+    }
+  ],
+  "n_glycosites": [
+    {"pos": 163, "domain": "TACI domain"}
+  ],
+  "localization_threshold": 0.75
+}

@@ -1,0 +1,61 @@
+{
+  "glycoprotein": {
+    "name": "IgA1 Hinge",
+    "description": "Human serum IgA1 hinge-region catalog using IgG1-like hinge numbering from the cited IgA1 O-glycosylation literature.",
+    "uniprot": "P01876",
+    "reference": "Mattu et al. 1998; Renfrow et al. 2005; Takahashi et al. 2011"
+  },
+  "difficulty_heuristic": "0.40 baseline +0.10 if core_types include a sialylated glycoform +0.10 if the site is within 2 residues of another curated O-glycosite +0.10 if the site is within 2 residues of Pro +0.10 if the site is reported in only one cited study +0.10 if the cited literature explicitly describes low occupancy or site variability; clamp to [0.30, 0.95].",
+  "sites": [
+    {
+      "pos": 225,
+      "aa": "T",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.7,
+      "domain": "hinge",
+      "immunogenicity_flags": []
+    },
+    {
+      "pos": 228,
+      "aa": "T",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.8,
+      "domain": "hinge",
+      "immunogenicity_flags": []
+    },
+    {
+      "pos": 230,
+      "aa": "S",
+      "core_types": ["Core1_GalNAc", "Core1", "Core1_Sia"],
+      "difficulty": 0.8,
+      "domain": "hinge",
+      "immunogenicity_flags": []
+    },
+    {
+      "pos": 232,
+      "aa": "S",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.8,
+      "domain": "hinge",
+      "immunogenicity_flags": []
+    },
+    {
+      "pos": 233,
+      "aa": "T",
+      "core_types": ["Core1_GalNAc", "Core1", "Core1_Sia"],
+      "difficulty": 0.8,
+      "domain": "hinge",
+      "immunogenicity_flags": []
+    },
+    {
+      "pos": 236,
+      "aa": "T",
+      "core_types": ["Core1_GalNAc", "Core1", "Core1_Sia"],
+      "difficulty": 0.7,
+      "domain": "hinge",
+      "immunogenicity_flags": []
+    }
+  ],
+  "n_glycosites": [],
+  "localization_threshold": 0.75
+}

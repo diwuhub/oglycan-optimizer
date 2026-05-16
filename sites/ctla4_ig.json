@@ -1,0 +1,49 @@
+{
+  "glycoprotein": {
+    "name": "CTLA4-Ig",
+    "description": "CTLA4 ectodomain-IgG1 Fc fusion using fusion-protein numbering from the cited CTLA4-Ig literature. O-glycosites are concentrated in the linker/hinge segment.",
+    "uniprot": "P16410 + IgG1 Fc",
+    "reference": "Bongers et al. 2011; Zhu et al. 2014; Zhang et al. 2020"
+  },
+  "difficulty_heuristic": "0.40 baseline +0.10 if core_types include a sialylated glycoform +0.10 if the site is within 2 residues of another curated O-glycosite +0.10 if the site is within 2 residues of Pro +0.10 if the site is reported in only one cited study +0.10 if the cited literature explicitly describes low occupancy or site variability; clamp to [0.30, 0.95].",
+  "sites": [
+    {
+      "pos": 130,
+      "aa": "S",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.6,
+      "domain": "linker/hinge",
+      "immunogenicity_flags": ["sialylation_PK"]
+    },
+    {
+      "pos": 136,
+      "aa": "S",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.7,
+      "domain": "linker/hinge",
+      "immunogenicity_flags": ["sialylation_PK"]
+    },
+    {
+      "pos": 139,
+      "aa": "S",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.6,
+      "domain": "linker/hinge",
+      "immunogenicity_flags": ["sialylation_PK"]
+    },
+    {
+      "pos": 148,
+      "aa": "S",
+      "core_types": ["Core1", "Core1_Sia"],
+      "difficulty": 0.6,
+      "domain": "linker/hinge",
+      "immunogenicity_flags": ["sialylation_PK"]
+    }
+  ],
+  "n_glycosites": [
+    {"pos": 76, "domain": "CTLA4"},
+    {"pos": 108, "domain": "CTLA4"},
+    {"pos": 207, "domain": "Fc"}
+  ],
+  "localization_threshold": 0.75
+}

@@ -1,0 +1,53 @@
+{
+    "_preset_metadata": {
+        "name": "high_resolution",
+        "scenario": "60K MS2 resolution for improved mass accuracy on glycopeptide precursors; accepts longer duty cycle.",
+        "derived_from": "oglycan-optimizer defaults + ms_acquisition.resolution_ms2 30000 -> 60000 and ms_acquisition.max_injection_ms2 250 -> 500"
+    },
+    "enzyme_preprocessing": {
+        "primary": "OpeRATOR",
+        "use_sialexo": true,
+        "use_pngasef": true,
+        "digestion_time_hours": 4,
+        "temperature_C": 37
+    },
+    "fragmentation": {
+        "mode": "EThcD",
+        "ethcd_sa_percent": 18,
+        "collision_energy_nce": 30,
+        "charge_state_min": 2,
+        "charge_state_max": 6,
+        "isolation_window_mz": 1.6
+    },
+    "ms_acquisition": {
+        "resolution_ms1": 120000,
+        "resolution_ms2": 60000,
+        "agc_target_ms1": 1000000.0,
+        "agc_target_ms2": 50000.0,
+        "max_injection_ms1": 50,
+        "max_injection_ms2": 500,
+        "dynamic_exclusion_s": 30
+    },
+    "glycan_database": {
+        "include_core1": true,
+        "include_core2": true,
+        "include_core3": true,
+        "max_glycan_size": 6,
+        "include_sialylated": true,
+        "include_fucosylated": true
+    },
+    "search_params": {
+        "mass_tolerance_ms1_ppm": 10,
+        "mass_tolerance_ms2_ppm": 20,
+        "min_peptide_length": 6,
+        "max_missed_cleavages": 2,
+        "fdr_threshold": 0.01
+    },
+    "lc_gradient": {
+        "column": "C18_UHPLC",
+        "gradient_start_pct_b": 2,
+        "gradient_end_pct_b": 40,
+        "gradient_time_min": 120,
+        "flow_rate_uL_min": 300
+    }
+}

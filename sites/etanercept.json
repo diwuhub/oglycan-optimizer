@@ -1,0 +1,29 @@
+{
+  "glycoprotein": {
+    "name": "Etanercept",
+    "description": "TNF receptor (TNFR2)-Fc fusion protein. 13 O-glycosites in the stalk/hinge region (positions 237-266). 3 N-glycosites at positions 149, 171, 317.",
+    "uniprot": "P20333",
+    "reference": "JACS Au 2025 Etanercept EThcD protocol"
+  },
+  "sites": [
+    {"pos": 237, "aa": "T", "core_types": ["Core1", "Core1_Sia"], "difficulty": 0.6, "domain": "stalk", "immunogenicity_flags": ["sialylation_PK"]},
+    {"pos": 239, "aa": "S", "core_types": ["Core1"], "difficulty": 0.5, "domain": "stalk", "immunogenicity_flags": []},
+    {"pos": 241, "aa": "T", "core_types": ["Core1", "Core2"], "difficulty": 0.7, "domain": "stalk", "immunogenicity_flags": []},
+    {"pos": 243, "aa": "T", "core_types": ["Core1", "Core1_Sia", "Core2"], "difficulty": 0.8, "domain": "stalk", "immunogenicity_flags": ["sialylation_PK"]},
+    {"pos": 245, "aa": "S", "core_types": ["Core1"], "difficulty": 0.4, "domain": "stalk", "immunogenicity_flags": []},
+    {"pos": 248, "aa": "T", "core_types": ["Core1", "Core1_Sia"], "difficulty": 0.6, "domain": "stalk", "immunogenicity_flags": ["sialylation_PK"]},
+    {"pos": 250, "aa": "S", "core_types": ["Core1", "Core2", "Core2_Fuc"], "difficulty": 0.85, "domain": "stalk", "immunogenicity_flags": ["fucosylation_ADCC"]},
+    {"pos": 253, "aa": "T", "core_types": ["Core1"], "difficulty": 0.5, "domain": "stalk", "immunogenicity_flags": []},
+    {"pos": 255, "aa": "T", "core_types": ["Core1", "Core1_Sia", "Core2"], "difficulty": 0.75, "domain": "stalk", "immunogenicity_flags": ["sialylation_PK"]},
+    {"pos": 258, "aa": "S", "core_types": ["Core1"], "difficulty": 0.45, "domain": "stalk", "immunogenicity_flags": []},
+    {"pos": 260, "aa": "T", "core_types": ["Core1", "Core2"], "difficulty": 0.7, "domain": "stalk", "immunogenicity_flags": []},
+    {"pos": 263, "aa": "S", "core_types": ["Core1", "Core1_Sia"], "difficulty": 0.65, "domain": "stalk", "immunogenicity_flags": ["sialylation_PK"]},
+    {"pos": 266, "aa": "T", "core_types": ["Core1", "Core2", "Core2_Fuc", "Core1_Sia"], "difficulty": 0.9, "domain": "stalk", "immunogenicity_flags": ["sialylation_PK", "fucosylation_ADCC"]}
+  ],
+  "n_glycosites": [
+    {"pos": 149, "domain": "CRD"},
+    {"pos": 171, "domain": "CRD"},
+    {"pos": 317, "domain": "Fc"}
+  ],
+  "localization_threshold": 0.75
+}
